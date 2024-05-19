@@ -4,23 +4,28 @@
     display: none;
   }
 }
-
 .navbar {
-  height: 100px;
+  height: 100px; /* Set a fixed height for the navbar */
   width: 100vw;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0px;
+  position: absolute; /* Change position to absolute */
+  top: 0;
+  left: 0; /* Align the navbar to the left side */
   z-index: 1000;
   background-color: white;
   color: RGB(214, 72, 31);
-  position: fixed;
   font-family: "Fredoka One", sans-serif;
-  
 }
+
+.desktopMenu {
+  margin-left: 50%; /* Adjust margin to keep menu centered */
+  transform: translateX(-50%); /* Center menu horizontally */
+}
+
+/* Other styles as needed */
 
 
 .desktopMenuListItem {
