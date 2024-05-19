@@ -1,10 +1,11 @@
+// Quizzes.js
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Quizes.css';
 import bgg from "../../assests/bgg.png";
 import QzCover from "../../assests/Qz.png";
 
-const Quizes = () => {
+const Quizzes = () => {
   const questionsData = [
     {
       id: 1,
@@ -107,8 +108,6 @@ const Quizes = () => {
     return correctAnswers;
   };
   
-  
-
   const renderCongratulations = () => {
     const score = calculateScore();
     return (
@@ -123,14 +122,14 @@ const Quizes = () => {
   return (
     <div className="qcontainer" style={{ backgroundImage: `url(${bgg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {!showQuiz && ( 
-        <div className="take-Quiz"onClick={handleCoverClick}>
+        <div className="take-Quiz" onClick={handleCoverClick}>
           <img src={QzCover} alt="Quiz Cover" className="quiz-cover" />
         </div>
       )}
 
       {showQuiz && !quizCompleted && ( 
         <div>
-          <h1 style={{ color: 'white' }}><b>QUIZES💡</b></h1>
+          <h1 style={{ color: 'white' }}><b>QUIZZES💡</b></h1>
           <div className="quize">
             <h2>{questions[currentQuestionIndex].question}</h2>
             <div id="answer-buttons">
@@ -155,4 +154,4 @@ const Quizes = () => {
   );
 }
 
-export default Quizes;
+export default Quizzes;

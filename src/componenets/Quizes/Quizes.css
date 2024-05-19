@@ -72,27 +72,39 @@
     text-align: center;
   }
 
-  .quize {
-   
-    padding: 20px;
-    border-radius: 10px;
-        width: 50%; /* Fixed width */
-        height: 38%; /* Fixed height */
-        overflow: auto; /* Add scroll if content overflows */
-        margin: 0 auto; /* Center the quiz container */
-        background-color: rgba(232, 28, 62, 0.686);
-        border-radius: 10px;
-        padding: 20px;
-   
-  }
-
- 
+ /* Quizzes.css */
 
 .qcontainer {
     position: relative;
     width: 100vw;
     height: 100vh;
   }
+  
+  .quiz-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add additional styles if needed */
+  }
+  
+  /* Quizzes.css */
+
+.quize {
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%; /* Fixed width */
+    height: auto; /* Remove fixed height */
+    overflow: auto; /* Add scroll if content overflows */
+    margin: 10% auto; /* Center the quiz container vertically and horizontally */
+    background-color: rgba(232, 28, 62, 0.686);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  
+  /* Your existing styles for buttons, congratulations, etc. */
+  
   
   .congratulations {
     position: absolute;

@@ -30,9 +30,9 @@ const Navbar = () => {
           <img src={quizzesIcon} alt="Quizzes" className="menu-icon" />
           <span>Quizzes</span>
         </Link>
-        <Link to="/learnmore" className="desktopMenuListItem">
+        <Link to="/LearnMore" className="desktopMenuListItem">
           <img src={learnmoreIcon} alt="learnmore" className="menu-icon" />
-          <span>learnmore</span>
+          <span>LearnMore</span>
         </Link>
 
         <Link to="/KidsClub" className="desktopMenuListItem">

@@ -116,7 +116,7 @@ const Games = () => {
         backgroundPosition: "center",
       }}
     >
-      <h2>Games</h2>
+      <h2></h2>
       {gameStep === "playGame" && (
         <div className="play-game" onClick={() => setGameStep("squareBox")}>
           <img src={playGame} alt="Play Game" />

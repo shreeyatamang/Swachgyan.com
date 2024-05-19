@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './LearnMore.css'; // Import your CSS file
+import './learnmore.css'; // Import your CSS file
 import image1 from '../../assests/Untitled design (6).png';
 import image2 from '../../assests/step2.png';
 import image3 from '../../assests/step3.png';
